@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import { useState } from "react";
-import { GoSun, GoMoon } from "react-icons/go";
+
 
 const Header = () => {
   const [value, setValue] = useState(true);
@@ -24,7 +24,7 @@ const Header = () => {
     <div className="adress">
       <h3>Todo List App</h3>
       <button className="Theme" onClick={handleThemeChange}>
-        {value ? <GoSun /> : <GoMoon />}
+        {value ? 'White' : 'Dark'}
       </button>
     </div>
   );
